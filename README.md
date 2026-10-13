@@ -1,5 +1,7 @@
 # Tiny Fighter Arena
 
+[![Made with pollinations.ai](https://raw.githubusercontent.com/pollinations/pollinations/main/packages/ui/src/brand/badge-made-with.svg)](https://pollinations.ai/?ref=badge)
+
 Describe a fighter in one line. AI brings it to life — portrait, powers, weakness, trash-talk — and sends it into a short commentated battle against the arena's resident champions.
 
 Built as a **Pollinations BYOP** demo: the app uses the [Bring Your Own Pollen](https://github.com/pollinations/pollinations/blob/main/BRING_YOUR_OWN_POLLEN.md) OAuth authorization-code flow (PKCE S256) to let each player authorize spending **their own Pollen** on generation requests. No backend, no API keys bundled in the repo — 100% static, runs on GitHub Pages.
