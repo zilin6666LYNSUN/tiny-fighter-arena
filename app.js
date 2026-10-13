@@ -8,7 +8,7 @@
 const AUTH_URL = "https://enter.pollinations.ai/authorize";
 const TOKEN_URL = "https://enter.pollinations.ai/api/oauth/token";
 const GEN_URL = "https://gen.pollinations.ai";
-const APP_KEY = "YOUR_PK_KEY_HERE";          // replaced at deploy; falls back to hostname attribution
+const APP_KEY = "pk_naWqNcRdJ6OdNWxx";        // replaced at deploy; falls back to hostname attribution
 const REDIRECT_URI = location.origin + location.pathname;
 const TEXT_MODEL = "openai/gpt-5.4-nano";
 const IMAGE_MODEL = "flux";
