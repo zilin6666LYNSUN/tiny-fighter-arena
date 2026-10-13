@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tiny Fighter Arena</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>TINY FIGHTER ARENA</h1>
+  <p class="tagline">Describe a fighter in one line. AI brings it to life, then sends it into a commentated battle.</p>
+  <div id="authBox" class="auth-box">
+    <button id="authBtn" class="btn btn-auth">Connect Pollen Wallet</button>
+    <span id="authStatus" class="auth-status"></span>
+  </div>
+</header>
+
+<main>
+  <!-- Step 1: Create fighter -->
+  <section id="createPanel" class="panel">
+    <h2>1 · Forge your fighter</h2>
+    <p class="hint">One sentence is enough. Example: <em>"A tiny fire-breathing octopus pirate with a peg-leg and a grudge"</em></p>
+    <form id="createForm">
+      <input type="text" id="fighterDesc" maxlength="200" placeholder="e.g. A glow-in-the-dark skeleton DJ who fights with bass drops" required>
+      <button type="submit" class="btn btn-primary" id="createBtn">Forge &amp; Enter the Arena</button>
+    </form>
+    <div id="createStatus" class="status"></div>
+  </section>
+
+  <!-- Step 2: Fighter card + opponent pick -->
+  <section id="fighterPanel" class="panel hidden">
+    <h2>2 · Your warrior</h2>
+    <div id="fighterCard" class="fighter-card"></div>
+    <h2>3 · Choose your opponent</h2>
+    <div id="opponentList" class="opponent-list"></div>
+    <button id="fightBtn" class="btn btn-primary hidden">Fight!</button>
+  </section>
+
+  <!-- Step 3: Battle -->
+  <section id="battlePanel" class="panel hidden">
+    <h2>4 · The battle</h2>
+    <div id="battleHUD" class="battle-hud"></div>
+    <div id="battleLog" class="battle-log"></div>
+  </section>
+
+  <!-- Step 4: Result -->
+  <section id="resultPanel" class="panel hidden">
+    <h2>Result</h2>
+    <div id="resultBox" class="result-box"></div>
+    <div class="result-actions">
+      <button id="shareBtn" class="btn">Copy battle report</button>
+      <button id="rematchBtn" class="btn btn-primary">Rematch</button>
+      <button id="newFighterBtn" class="btn">Forge a new fighter</button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Powered by <a href="https://pollinations.ai" target="_blank" rel="noopener">Pollinations</a> · <a href="https://github.com/zilin6666LYNSUN/tiny-fighter-arena" target="_blank" rel="noopener">Source</a> · BYOP OAuth + PKCE</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
